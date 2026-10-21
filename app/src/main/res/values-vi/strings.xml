@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Quản lý Sinh viên</string>
+    <string name="student_list_title">Danh sách Sinh viên</string>
+    <string name="student_detail_title">Chi tiết Sinh viên</string>
+    <string name="add_student_title">Thêm mới Sinh viên</string>
+    <string name="edit_student_title">Chỉnh sửa Sinh viên</string>
+    <string name="no_students_found">Chưa có sinh viên nào. Nhấn + để thêm mới.</string>
+
+    <string name="full_name">Họ và tên</string>
+    <string name="student_code">Mã số SV</string>
+    <string name="email">Email</string>
+    <string name="avatar_uri">Ảnh đại diện</string>
+    <string name="avatar_url_label">Hoặc nhập URL ảnh</string>
+    <string name="pick_image_from_device">Chọn ảnh từ thiết bị</string>
+
+    <string name="btn_save">Lưu</string>
+    <string name="btn_edit">Chỉnh sửa</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_confirm">Đồng ý</string>
+    <string name="back">Quay lại</string>
+    <string name="add_new_student">Thêm mới sinh viên</string>
+
+    <string name="confirm_delete_title">Xác nhận xóa</string>
+    <string name="confirm_delete_message">Bạn có muốn xóa thông tin SV không?</string>
+    <string name="confirm_edit_title">Xác nhận chỉnh sửa</string>
+    <string name="confirm_edit_message">Bạn có muốn sửa thông tin SV không?</string>
+
+    <string name="error_empty_fields">Vui lòng nhập đầy đủ các thông tin!</string>
+    <string name="error_name_empty">Họ tên không được để trống</string>
+    <string name="error_code_empty">Mã số SV không được để trống</string>
+    <string name="error_email_empty">Email không được để trống</string>
+    <string name="error_avatar_empty">Vui lòng chọn ảnh hoặc nhập URL ảnh</string>
+    <string name="student_avatar_desc">Ảnh đại diện sinh viên</string>
+</resources>
