@@ -97,7 +97,7 @@ fun LayoutBai2Screen(modifier: Modifier = Modifier) {
 
         // Họ tên - MSSV căn giữa ở đáy
         Text(
-            text = "Chu Mạnh Quân - BIT240189",
+            text = "Nguyễn Thành Thanh - BIT240210",
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier
