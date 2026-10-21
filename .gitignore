@@ -6,8 +6,6 @@ local.properties
 *.iml
 .DS_Store
 captures/
-*.mp4
-*.zip
 
 *.log
 
