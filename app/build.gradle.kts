@@ -3,9 +3,10 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
-val mockApiBaseUrl = providers.gradleProperty("mockApiBaseUrl")
-    .orElse("https://YOUR_PROJECT_ID.mockapi.io/api/v1/")
-    .get()
+val mockApiBaseUrl = (project.findProperty("mockApiBaseUrl") as? String)
+    ?.trim()
+    ?.takeIf { it.isNotEmpty() }
+    ?: "https://6ad4d44348476c0785d94601.mockapi.io/"
 
 android {
     namespace = "com.example.coursemanagement"

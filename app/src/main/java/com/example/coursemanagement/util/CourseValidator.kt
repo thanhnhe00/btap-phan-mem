@@ -28,7 +28,13 @@ object CourseValidator {
             return "Thời lượng phải là số lớn hơn 0."
         }
         if (!isHttpUrl(thumbnail)) return "URL ảnh bìa phải là liên kết HTTP/HTTPS hợp lệ."
+        if (thumbnail.contains("example.com", ignoreCase = true)) {
+            return "Ảnh bìa phải dùng URL thật tải được, không dùng URL minh họa example.com."
+        }
         if (!isHttpUrl(trailerUrl)) return "URL trailer phải là liên kết HTTP/HTTPS hợp lệ."
+        if (trailerUrl.contains("example.com", ignoreCase = true)) {
+            return "Trailer phải dùng URL thật tải được, không dùng URL minh họa example.com."
+        }
         return null
     }
 

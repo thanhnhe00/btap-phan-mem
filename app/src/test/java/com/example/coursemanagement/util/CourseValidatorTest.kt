@@ -11,10 +11,11 @@ class CourseValidatorTest {
         title: String = "Lập trình Android",
         price: String = "500000",
         category: String = "1",
-        trailer: String = "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        thumbnail: String = "https://picsum.photos/seed/course/1200/700",
+        trailer: String = "https://www.w3schools.com/html/mov_bbb.mp4"
     ) = CourseValidator.validate(
         title, "Lập trình Kotlin", "Giảng viên A", price, "30",
-        "https://picsum.photos/seed/course/1200/700", trailer, category, setOf("1", "2")
+        thumbnail, trailer, category, setOf("1", "2")
     )
 
     @Test fun validCourse() = assertNull(check())
@@ -25,6 +26,14 @@ class CourseValidatorTest {
         "Vui lòng chọn danh mục hợp lệ từ MockAPI.", check(category = "999")
     )
     @Test fun acceptsZeroPrice() = assertNull(check(price = "0"))
+    @Test fun rejectsExampleComThumbnail() = assertEquals(
+        "Ảnh bìa phải dùng URL thật tải được, không dùng URL minh họa example.com.",
+        check(thumbnail = "https://example.com/photo.jpg")
+    )
+    @Test fun rejectsExampleComTrailer() = assertEquals(
+        "Trailer phải dùng URL thật tải được, không dùng URL minh họa example.com.",
+        check(trailer = "https://example.com/trailer.mp4")
+    )
     @Test fun urlChecks() {
         assertTrue(CourseValidator.isHttpUrl("https://example.com/video.mp4"))
         assertFalse(CourseValidator.isHttpUrl("file:///sdcard/movie.mp4"))

@@ -8,3 +8,6 @@ local.properties
 captures/
 *.mp4
 *.zip
+
+*.log
+
