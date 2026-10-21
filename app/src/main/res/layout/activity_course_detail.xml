@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary" app:title="Chi tiết khóa học" app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="@android:color/white" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="4dp"
+        android:indeterminate="true" android:visibility="gone" />
+    <TextView android:id="@+id/textStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:padding="16dp" android:textColor="@color/muted" android:visibility="gone" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/buttonRetry"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"
+        android:text="Thử lại" android:visibility="gone" />
+    <ScrollView android:id="@+id/scrollContent" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:visibility="gone" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="16dp" android:orientation="vertical">
+            <ImageView android:id="@+id/imageThumbnail" android:layout_width="match_parent" android:layout_height="220dp"
+                android:scaleType="centerCrop" android:src="@drawable/image_placeholder"
+                android:contentDescription="Ảnh bìa khóa học" />
+            <TextView android:id="@+id/textTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:textSize="23sp" android:textColor="@color/ink" android:textStyle="bold" />
+            <TextView android:id="@+id/textCategory" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:textColor="@color/muted" android:textSize="15sp" />
+            <TextView android:id="@+id/textInstructor" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textColor="@color/muted" android:textSize="15sp" />
+            <TextView android:id="@+id/textDuration" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textColor="@color/muted" android:textSize="15sp" />
+            <TextView android:id="@+id/textPrice" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:textColor="@color/primary" android:textStyle="bold" android:textSize="21sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:text="Giới thiệu khóa học" android:textStyle="bold"
+                android:textColor="@color/ink" android:textSize="17sp" />
+            <TextView android:id="@+id/textDescription" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:textColor="@color/ink" android:textSize="15sp" />
+            <TextView android:id="@+id/textCreatedAt" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:textColor="@color/muted" android:textSize="13sp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/buttonTrailer"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:text="▶ Xem trailer" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="6dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/buttonEdit"
+                    android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginEnd="4dp" android:text="Sửa" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/buttonDelete"
+                    android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="4dp" android:text="Xóa" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

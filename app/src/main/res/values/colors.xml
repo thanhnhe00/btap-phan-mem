@@ -1,0 +1,9 @@
+<resources>
+    <color name="primary">#1746A2</color>
+    <color name="primary_dark">#103577</color>
+    <color name="teal">#167D7F</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="background">#F5F7FA</color>
+    <color name="ink">#18233A</color>
+    <color name="muted">#65748B</color>
+</resources>

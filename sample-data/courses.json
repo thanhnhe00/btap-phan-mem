@@ -1,0 +1,92 @@
+[
+  {
+    "id":"1",
+    "title":"Lập trình Android cơ bản với Kotlin",
+    "description":"Làm quen Android Studio, Activity, XML Layout, RecyclerView và xây dựng ứng dụng Kotlin đầu tiên.",
+    "categoryId":"1","instructor":"Nguyễn Văn An","price":500000,"duration":30,
+    "thumbnail":"https://picsum.photos/seed/android-kotlin/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"2",
+    "title":"Android nâng cao và REST API",
+    "description":"Kết nối Retrofit, Gson, Coroutines, xử lý lỗi và áp dụng Repository Pattern.",
+    "categoryId":"1","instructor":"Trần Thị Bình","price":850000,"duration":42,
+    "thumbnail":"https://picsum.photos/seed/android-rest-api/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"3",
+    "title":"Flutter đa nền tảng từ A đến Z",
+    "description":"Tạo giao diện Flutter, quản lý trạng thái, gọi API và đóng gói ứng dụng.",
+    "categoryId":"1","instructor":"Phạm Minh Châu","price":990000,"duration":48,
+    "thumbnail":"https://picsum.photos/seed/flutter-mobile/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"4",
+    "title":"React Native thực chiến",
+    "description":"Xây dựng app di động React Native, navigation và kết nối dữ liệu JSON.",
+    "categoryId":"1","instructor":"Lê Quốc Dũng","price":790000,"duration":36,
+    "thumbnail":"https://picsum.photos/seed/react-native-app/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"5",
+    "title":"HTML CSS JavaScript cho người mới",
+    "description":"Thiết kế trang web responsive bằng HTML5, CSS Flexbox và JavaScript hiện đại.",
+    "categoryId":"2","instructor":"Hoàng Thị Hạnh","price":350000,"duration":25,
+    "thumbnail":"https://picsum.photos/seed/html-css-js/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"6",
+    "title":"Backend ASP.NET Core và RESTful API",
+    "description":"Xây dựng API với ASP.NET Core, phân lớp dịch vụ, xác thực và kiểm thử API.",
+    "categoryId":"2","instructor":"Vũ Đức Long","price":1150000,"duration":55,
+    "thumbnail":"https://picsum.photos/seed/dotnet-restful/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"7",
+    "title":"Spring Boot và PostgreSQL",
+    "description":"Tạo hệ thống backend Java Spring Boot với CRUD, validation và PostgreSQL.",
+    "categoryId":"2","instructor":"Đỗ Thị Mai","price":1050000,"duration":50,
+    "thumbnail":"https://picsum.photos/seed/spring-postgresql/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"8",
+    "title":"Python và Machine Learning cơ bản",
+    "description":"Làm sạch dữ liệu, hồi quy, phân loại và đánh giá mô hình học máy bằng Python.",
+    "categoryId":"3","instructor":"Bùi Thanh Nam","price":900000,"duration":45,
+    "thumbnail":"https://picsum.photos/seed/python-machine-learning/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"9",
+    "title":"Deep Learning với TensorFlow",
+    "description":"Tìm hiểu mạng nơ-ron, CNN, huấn luyện và triển khai mô hình bằng TensorFlow.",
+    "categoryId":"3","instructor":"Ngô Thị Oanh","price":1350000,"duration":60,
+    "thumbnail":"https://picsum.photos/seed/deep-learning-ai/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "createdAt":"2026-10-13"
+  },
+  {
+    "id":"10",
+    "title":"Ứng dụng AI tạo sinh và Prompt Engineering",
+    "description":"Thực hành xây dựng ứng dụng sử dụng mô hình ngôn ngữ và kỹ thuật prompt cơ bản.",
+    "categoryId":"3","instructor":"Đặng Minh Quân","price":0,"duration":18,
+    "thumbnail":"https://picsum.photos/seed/generative-ai-course/1200/700",
+    "trailerUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "createdAt":"2026-10-13"
+  }
+]

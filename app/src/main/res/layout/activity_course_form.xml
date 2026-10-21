@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary" app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="@android:color/white" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progress"
+        android:layout_width="match_parent" android:layout_height="4dp" android:indeterminate="true" android:visibility="gone" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="16dp" android:orientation="vertical">
+            <TextView android:id="@+id/textStatus" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textColor="@color/muted" android:visibility="gone" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Tên khóa học *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editTitle"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:hint="Mô tả *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editDescription"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="top"
+                    android:inputType="textMultiLine|textCapSentences" android:minLines="3" android:maxLines="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:text="Danh mục * (lấy từ MockAPI)" android:textColor="@color/ink" android:textStyle="bold" />
+            <Spinner android:id="@+id/spinnerCategory" android:layout_width="match_parent" android:layout_height="48dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:hint="Giảng viên *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editInstructor"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:hint="Học phí (VNĐ) *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editPrice"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:hint="Thời lượng (giờ) *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editDuration"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:hint="URL ảnh bìa *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editThumbnail"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/buttonPreview"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:text="Xem trước ảnh từ URL" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <ImageView android:id="@+id/imagePreview" android:layout_width="match_parent" android:layout_height="180dp"
+                android:layout_marginTop="6dp" android:scaleType="centerCrop" android:src="@drawable/image_placeholder"
+                android:contentDescription="Xem trước ảnh bìa" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:hint="URL trailer MP4 *" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editTrailer"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" android:textColor="@color/muted" android:textSize="12sp"
+                android:text="Khuyến nghị liên kết MP4 HTTPS trực tiếp để Media3 phát được. YouTube dạng trang web không phát trực tiếp trong player này." />
+            <com.google.android.material.button.MaterialButton android:id="@+id/buttonSave"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:text="Lưu khóa học" android:enabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
